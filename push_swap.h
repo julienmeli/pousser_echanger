@@ -26,16 +26,19 @@ void    ft_rra(t_list **stack);
 void    ft_rrb(t_list **stack);
 void    ft_rrr(t_list **stack_a, t_list **stack_b);
 
+//push_swap_utils.c
 t_list     *ft_atoi_list(int *tab, int	size_a);
-void    ft_print_stack(t_list *stack_a, t_list *stack_b);
-int     ft_there_is_dup(char **arguments, int size_a);
+int     ft_atoi(char *str);
 
-int             ft_is_in_ascending_order(char **arguments, int size_a);
+void    ft_print_stack(t_list *stack_a, t_list *stack_b);
+int     ft_there_is_dup(char **arguments);
+
+int             ft_is_in_ascending_order(char **arguments);
+char    **ft_array(int argc, char **argv);
 
 void    ft_putstr(char *str);
 void    ft_putnbr(int nb);
 void    ft_putchar(char c);
-int     ft_atoi(char *str);
 
 char    **ft_split(char const *s, char c);
 
@@ -76,8 +79,19 @@ int     ft_checkos(t_list *stack_a);
 
 void    ft_tidy(t_list **stack);
 
-//index
+//ft_index.c
 int     *ft_turn_into_integers(char **arguments, int size_a);
 int     *ft_index(int *tab, int size);
+
+//ft_checks2.c
+int     ft_check_arguments(char **arguments);
+int     ft_size(char **arguments);
+
+//ft_free.c
+void    ft_free_arg(char **arguments);
+
+//ft_algo.c
+void    ft_sort_only_3(t_list **stack_a);
+void    ft_algo(t_list **stack_a, t_list **stack_b);
 
 #endif
